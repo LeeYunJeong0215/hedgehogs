@@ -19,6 +19,9 @@ public class exam01_Fibonacci {
 		int sum= 0;
 		
 		//횟수입력
+		//long[] numbers = null;
+		//long sum= 0;
+		
 		//Scanner scanner = new Scanner(System.in);
 		//System.out.print("피보나치 수열 횟수 입력> ");
 		//int selectNum = scanner.nextInt();
