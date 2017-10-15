@@ -3,14 +3,14 @@ package chuseock_Exercise;
 public class exam01_Fibonacci {
 
 	public static void main(String[] args) {
-		/*[¹®Á¦ 1] for¹®À» ÀÌ¿ëÇÑ  Fibonacci ¼ö¿­
-		- ÇÇº¸³ªÄ¡ ¼ö¿­ÀÌ¶õ Ã³À½ µÎ Ç×À» 1°ú 1·Î ÇÑ ÈÄ, 
-		±× ´ÙÀ½ Ç×ºÎÅÍ´Â ¹Ù·Î ¾ÕÀÇ µÎ °³ÀÇ Ç×À» ´õÇØ ¸¸µå´Â ¼ö¿­À» ¸»ÇÑ´Ù. 
-		´ÙÀ½ ¼ö¿­À» for¹®À» »ç¿ëÇÏ¿© Ãâ·ÂÇÑ´Ù.
+		/*[ë¬¸ì œ 1] forë¬¸ì„ ì´ìš©í•œ  Fibonacci ìˆ˜ì—´
+		- í”¼ë³´ë‚˜ì¹˜ ìˆ˜ì—´ì´ëž€ ì²˜ìŒ ë‘ í•­ì„ 1ê³¼ 1ë¡œ í•œ í›„, 
+		ê·¸ ë‹¤ìŒ í•­ë¶€í„°ëŠ” ë°”ë¡œ ì•žì˜ ë‘ ê°œì˜ í•­ì„ ë”í•´ ë§Œë“œëŠ” ìˆ˜ì—´ì„ ë§í•œë‹¤. 
+		ë‹¤ìŒ ìˆ˜ì—´ì„ forë¬¸ì„ ì‚¬ìš©í•˜ì—¬ ì¶œë ¥í•œë‹¤.
 		 
 		1  1  2  3  5  8  13  21  34  55	 
 */		
-		//Ã¹¹øÂ° Ç®ÀÌ : ¹è¿­»ç¿ë(ºñÈ¿À²Àû)
+		//ì²«ë²ˆì§¸ í’€ì´ : ë°°ì—´ì‚¬ìš©
 		int[] numbers = new int[10];
 		int sum= 0;
 		
@@ -23,7 +23,7 @@ public class exam01_Fibonacci {
 			System.out.print(", " + sum);
 			numbers[i+2] = sum;	
 		}
-		//µÎ¹øÂ° Ç®ÀÌ : ¹è¿­À» ¾²Áö ¾Ê°í Çª´Â ¹æ¹ýÀ» »ý°¢ÇØº¸ÀÚ
+		//ë‘ë²ˆì§¸ í’€ì´ : ë°°ì—´ì„ ì“°ì§€ ì•Šê³  í‘¸ëŠ” ë°©ë²•ì„ ìƒê°í•´ë³´ìž
 	}
 
 }
