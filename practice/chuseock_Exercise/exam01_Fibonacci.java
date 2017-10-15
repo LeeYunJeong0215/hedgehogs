@@ -11,8 +11,19 @@ public class exam01_Fibonacci {
 		1  1  2  3  5  8  13  21  34  55	 
 */		
 		//첫번째 풀이 : 배열사용
+		//장점은 피보나치 수열 출력 횟수를 입력받아 그만큼 출력가능하다
+		//단점은 용량을 많이 차지 할 것 같다는 것.
+		
+		
 		int[] numbers = new int[10];
 		int sum= 0;
+		
+		//횟수입력
+		//Scanner scanner = new Scanner(System.in);
+		//System.out.print("피보나치 수열 횟수 입력> ");
+		//int selectNum = scanner.nextInt();
+		
+		//numbers = new long[selectNum];
 		
 		numbers[0] = 1;
 		numbers[1] = 1;
