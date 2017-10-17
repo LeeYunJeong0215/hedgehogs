@@ -13,7 +13,7 @@ public class OperatorSelfApprasial08 {
 10 9 9
 Ãâ·Â   [Copy]
 1 0*/
-		/*Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		
 		int[] numbers = new int[3];
 		
@@ -22,16 +22,18 @@ public class OperatorSelfApprasial08 {
 		}
 		
 		if(numbers[0] > numbers[1] && numbers[0] > numbers[2]){
-			System.out.println("true");
+			System.out.print("true");
 		}else{
-			System.out.println("false");
+			System.out.print("false");
 		}
 		
 		if(numbers[0]==numbers[1] && numbers[0]==numbers[2]){
-			System.out.println();
-		}*/
+			System.out.println(" " + "true");
+		}else{
+			System.out.println(" " + "false");
+		}
 
-
+		scanner.close();
 	}
 
 }
