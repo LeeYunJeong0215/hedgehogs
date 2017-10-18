@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Exercise09 {
 
 	public static void main(String[] args) {
-		//í•™ìƒìˆ˜ì™€ ê° í•™ìƒì˜ ì ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ ìµœê³ ì ìˆ˜ ë° í‰ê· ì ìˆ˜ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨
+		//ÇĞ»ı¼ö¿Í °¢ ÇĞ»ıÀÇ Á¡¼ö¸¦ ÀÔ·Â¹Ş¾Æ ÃÖ°íÁ¡¼ö ¹× Æò±ÕÁ¡¼ö¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥
 		boolean run = true;
 		int studentNum = 0;
 		int[] scores = null;
@@ -13,57 +13,60 @@ public class Exercise09 {
 		
 		while(run){
 			System.out.println("-------------------------------------------");
-			System.out.println("1.í•™ìƒìˆ˜ | 2.ì ìˆ˜ì…ë ¥ | 3.ì ìˆ˜ë¦¬ìŠ¤íŠ¸ | 4.ë¶„ì„ | 5.ì¢…ë£Œ");
+			System.out.println("1.ÇĞ»ı¼ö | 2.Á¡¼öÀÔ·Â | 3.Á¡¼ö¸®½ºÆ® | 4.ºĞ¼® | 5.Á¾·á");
 			System.out.println("-------------------------------------------");
-			System.out.print("ì„ íƒ> ");
+			System.out.print("¼±ÅÃ> ");
 			
 			int selectNo = scanner.nextInt();
 			
 			if(selectNo == 1){
-				//í•™ìƒìˆ˜
-				System.out.print("í•™ìƒìˆ˜ > ");
+				//ÇĞ»ı¼ö
+				System.out.print("ÇĞ»ı¼ö > ");
 				studentNum = scanner.nextInt();
 				scores = new int[studentNum];
 				
 			}else if(selectNo == 2){
-				//ì ìˆ˜ì…ë ¥
+				//Á¡¼öÀÔ·Â
 				for(int i=0; i<scores.length; i++){
 					System.out.print("scores[" + i + "] : ");
 					scores[i] = scanner.nextInt();
 				}
 				
 			}else if(selectNo == 3){
-				//ì ìˆ˜ë¦¬ìŠ¤íŠ¸(ì…ë ¥ëœ ì ìˆ˜ê°’ ë³´ì—¬ì£¼ê¸°)
+				//Á¡¼ö¸®½ºÆ®(ÀÔ·ÂµÈ Á¡¼ö°ª º¸¿©ÁÖ±â)
 				for(int i=0; i<scores.length; i++){
 					System.out.print("scores[" + i + "] : ");
 					System.out.println(scores[i]);
 				}
 			}else if(selectNo == 4){
-				//ë¶„ì„(ìµœê³ ì ìˆ˜, í‰ê· )
+				//ºĞ¼®(ÃÖ°íÁ¡¼ö, Æò±Õ)
 				
-				//1. ìµœê³ ì ìˆ˜
+				//1. ÃÖ°íÁ¡¼ö
 				int max = 0;
 				for(int i=0; i<scores.length; i++){
+					//teacher code( »ïÇ×¿¬»êÀÚ¸¦ ÀÌ¿ëÇÑ ÃÖ´ë°ª Ãâ·Â )
+					//max = (max<scores[i])?scores[i]:max;
 					if(max < scores[i]){
 						max = scores[i];
 					}
 				}
-				System.out.println("ìµœê³ ì ìˆ˜ : " + max);
+				System.out.println("ÃÖ°íÁ¡¼ö : " + max);
 				
-				//2. í‰ê· 
+				//2. Æò±Õ
 				int sum = 0;
 				for(int score : scores){
 					sum += score;
 				}
+				//double avg = (double)sum / studentNum;
 				double avg = (double)sum / scores.length;
-				System.out.println("í‰ê· ì ìˆ˜ : " + avg);
+				System.out.println("Æò±ÕÁ¡¼ö : " + avg);
 			}else if(selectNo == 5){
 				run = false;
 			}else{
-				System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
+				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
 			}
 		}
-		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
+		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
 		scanner.close();
 	}
 
