@@ -36,6 +36,7 @@ public class ComputerExample {
 		int result5 = myCom.sum2(num1, num2);
 		System.out.println("result5 : " + result5);
 		
+		scanner.close();
 	}
 	
 
