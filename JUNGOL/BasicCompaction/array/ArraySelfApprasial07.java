@@ -38,7 +38,7 @@ public class ArraySelfApprasial07 {
 		if(max > 100 || max <= 0){
 			max = 100;
 		}
-		if(min <= 100||min >= 9999 ){
+		if(min <= 100 || min >= 9999 ){
 			min = 100;
 		}
 		System.out.print(max + " ");
