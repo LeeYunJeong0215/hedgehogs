@@ -5,17 +5,20 @@ import java.util.Scanner;
 public class ArraySelfApprasial03 {
 	public static void main(String[] args) {
 		/*
-		 * 100 ÀÌÇÏÀÇ ÀÚ¿¬¼ö¸¦ ÀÔ·Â¹Þ¾Æ Ã¹ ¹øÂ° Ç×Àº 100À¸·Î 
-		 * µÎ ¹øÂ° Ç×Àº ÀÔ·Â¹ÞÀº ¼ö·Î ÃÊ±âÈ­ÇÏ°í ´ÙÀ½ Ç×ºÎÅÍ´Â ÀüÀüÇ×¿¡¼­
-		 * ÀüÇ×À» »« ¼ö·Î Ã¤¿ö³ª°¡´Â ¼ö¿­À» ÀÛ¼ºÇÏ¿© ±× ¼ö°¡ À½¼ö°¡ ³ª¿Ã ¶§±îÁö Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
+		 * 100 ì´í•˜ì˜ ìžì—°ìˆ˜ë¥¼ ìž…ë ¥ë°›ì•„ ì²« ë²ˆì§¸ í•­ì€ 100ìœ¼ë¡œ 
+		 * ë‘ ë²ˆì§¸ í•­ì€ ìž…ë ¥ë°›ì€ ìˆ˜ë¡œ ì´ˆê¸°í™”í•˜ê³  ë‹¤ìŒ í•­ë¶€í„°ëŠ” ì „ì „í•­ì—ì„œ
+		 * ì „í•­ì„ ëº€ ìˆ˜ë¡œ ì±„ì›Œë‚˜ê°€ëŠ” ìˆ˜ì—´ì„ ìž‘ì„±í•˜ì—¬ ê·¸ ìˆ˜ê°€ ìŒìˆ˜ê°€ ë‚˜ì˜¬ ë•Œê¹Œì§€ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
 		 * 
-		 * ÀÔ·Â [Copy] 62 Ãâ·Â [Copy]y 100 62 38 24 14 10 4 6 -2
+		 * ìž…ë ¥ [Copy] 62 ì¶œë ¥ [Copy]y 100 62 38 24 14 10 4 6 -2
 		 */
 
 		Scanner scan = new Scanner(System.in);
 		int inputNum = scan.nextInt();
-		//¹è¿­À» ºñÈ¿À²ÀûÀ¸·Î ¸¹ÀÌ ¸¸µé ¼ö ¹Û¿¡ ¾ø´Âµ¥ ÀÌ°É ÁÙÀÏ ¼ö ÀÖ´Â ¹æ¹ýÀº ¹«¾ùÀÏ±î?
-		int[] input = new int[inputNum];
+		//ë°°ì—´ì„ ë¹„íš¨ìœ¨ì ìœ¼ë¡œ ë§Žì´ ë§Œë“¤ ìˆ˜ ë°–ì— ì—†ëŠ”ë° ì´ê±¸ ì¤„ì¼ ìˆ˜ ìžˆëŠ” ë°©ë²•ì€ ë¬´ì—‡ì¼ê¹Œ?
+		//int[] input = new int[inputNum];
+		
+		//ìµœëŒ€ 9ê°œ ì´ìƒì˜ ë°°ì—´ì€ í•„ìš”ê°€ ì—†ìŒ.(62 ìž…ë ¥ì‹œ ì¶œë ¥ 9ê°œë¡œ ìµœëŒ€)
+		int[] input = new int[9]; 
 		
 		input[0] = 100;
 		input[1] = inputNum;
